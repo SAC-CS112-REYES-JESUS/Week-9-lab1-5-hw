@@ -20,7 +20,7 @@ public class lab1 {
 			
 		}
 		
-		float average = sum/myArray.length;
+		double average = (sum/myArray.length);
 	
 		System.out.printf("The average is %.2f", average);
 		
