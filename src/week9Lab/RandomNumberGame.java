@@ -14,7 +14,7 @@ public class RandomNumberGame {
 	int[] compArray=new int[10];
 	int[] winArray=new int[10];
 	int[] loseArray=new int[10];
-	
+	int number =0;
 	
 	RandomNumber myGame = new RandomNumber();
 	
@@ -23,12 +23,17 @@ public class RandomNumberGame {
 	
 		 
 		for(int i=0;i < winArray.length;i++){
-			int genNumber =myGame.GetARandomNumberbtw();
+			Scanner input = new Scanner(System.in);
+			
+			int genNumber =myGame.GetANumber(number);
+			System.out.println("Pick a limit number 0-X");
+			number=input.nextInt();
 			
 			
-		 System.out.println("Is the number between 0-99   odd(1) or even(2)?");
+			
+		 System.out.printf("Is the number between 0-%d  odd(1) or even(2)?\n",number);
 		 
-		 Scanner input = new Scanner(System.in);
+		
 		 int choice = input.nextInt();
 
 		  
